@@ -83,6 +83,9 @@ Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true
 
 ### 3. Get the Meeting Room License SKU
 Set the licence SKU in the variable in the next step $license="xyz"
+
+![alt text](/Images/Images/licences.png]
+
 ```js
 Get-MsolAccountSku
 ```
