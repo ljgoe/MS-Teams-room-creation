@@ -82,13 +82,13 @@ Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### 3. Get the Meeting Room License SKU
-Set the licence SKU in the variable in the next step $license="xyz"
-
-![Licence Check](Images/Images/licences.png)
+Get the licence SKU to use in the next step, mine is `testitvideo:Microsoft_Teams_Rooms_Pro`
 
 ```js
 Get-MsolAccountSku
 ```
+![Licence Check](Images/Images/licences.png)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### 4. Set the variables for Meeting Room account
