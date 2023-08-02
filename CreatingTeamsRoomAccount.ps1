@@ -50,11 +50,11 @@ $location="AU"
 
 <# 
 Set the calendar processing with some key parameters and details
-1 - Setting AutomateProcessing to AutoAccept means that meetings will be processed and accepted automatically if there are no conflicts
-2 - Setting AddOrganizerToSubject to false ensures that the original subject is preserved and not replaced by the organizers’ name
-3 - Setting ProcessExternalMeetingMessages to true
-4 - Setting the RemovePrivateProperty to false ensures that the private flag for meeting requests is preserved (private meetings stay private)
-5 - Setting DeleteComments and DeleteSubject to false is critical and ensures that your meeting invitation has a “Join” button
+1 - Set AutomateProcessing to AutoAccept - Meetings will be processed and accepted automatically if there are no conflicts
+2 - Set AddOrganizerToSubject to false - Ensures that the original subject is preserved and not replaced by the organisers’ name
+3 - Set ProcessExternalMeetingMessages to true - Allows users external to your company invite the room to a Teams meeting
+4 - Set the RemovePrivateProperty to false - Ensures that the private flag for meeting requests is preserved (private meetings stay private)
+5 - Set DeleteComments and DeleteSubject to false - This is critical and ensures that your meeting invitation has a “Join” button
 6 - The AdditionalResponse parameters are there to send useful information in the message back to the requester
 #> 
 
