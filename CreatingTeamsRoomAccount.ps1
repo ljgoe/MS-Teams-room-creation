@@ -46,16 +46,16 @@ $pwd="yourpassword"
 $license="testitvideo:Microsoft_Teams_Rooms_Pro"
 $location="AU"
 
-# Create a mailbbox resource
+# Create a mailbox resource
 
 <# 
 Set the calendar processing with some key parameters and details
 1 - Setting AutomateProcessing to AutoAccept means that meetings will be processed and accepted automatically if there are no conflicts
 2 - Setting AddOrganizerToSubject to false ensures that the original subject is preserved and not replaced by the organizers’ name
 3 - Setting ProcessExternalMeetingMessages to true
-3 - Setting the RemovePrivateProperty to false ensures that the private flag for meeting requests is preserved (private meetings stay private)
-4 - Setting DeleteComments and DeleteSubject to false is critical and ensures that your meeting invitation has a “Join” button
-5 - The AdditionalResponse parameters are there to send useful information in the message back to the requester
+4 - Setting the RemovePrivateProperty to false ensures that the private flag for meeting requests is preserved (private meetings stay private)
+5 - Setting DeleteComments and DeleteSubject to false is critical and ensures that your meeting invitation has a “Join” button
+6 - The AdditionalResponse parameters are there to send useful information in the message back to the requester
 #> 
 
 New-Mailbox -MicrosoftOnlineServicesID $newRoom -Name $name -Room -RoomMailboxPassword (ConvertTo-SecureString -String $pwd -AsPlainText -Force) -EnableRoomMailboxAccount $true
